@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Week2Project</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="Add_question" />
+    <string name="cancel_button" />
+    <string name="enter_your_question_here">Enter your question here</string>
+    <string name="enter_your_answer_here" />
+    <string name="save_button">save button</string>
 </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestion">
+
+    <ImageView
+        android:id="@+id/imgCancelBut"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/cancel_button"
+        android:focusable="true"
+        android:src="@drawable/hex_cross_svgrepo_com"
+        tools:ignore="OnClick,SpeakableTextPresentCheck"
+        />
+
+    <EditText
+        android:id="@+id/Question_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:autofillHints="Question"
+        android:gravity="center"
+        android:hint="@string/enter_your_question_here"
+        android:inputType="text"
+        android:textColorHint="#78909C"
+        android:textSize="30sp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/Answer_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/Question_text_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:autofillHints="Answer"
+        android:gravity="center"
+        android:hint="Enter your answer here"
+        android:inputType="text"
+        android:textSize="30sp"
+        android:textColorHint="#78909C"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <ImageView
+        android:id="@+id/SaveButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/save_button"
+        android:focusable="true"
+        android:src="@drawable/download_svgrepo_com"
+        tools:ignore="OnClick,SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+
+</RelativeLayout>
